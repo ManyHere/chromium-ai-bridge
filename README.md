@@ -1,7 +1,6 @@
 <div align="center">
 
-[![Русский](https://img.shields.io/badge/Язык-Русский-4f46e5?style=for-the-badge)](README.md)
-[![English](https://img.shields.io/badge/Language-English-gray?style=for-the-badge)](README_EN.md)
+[![Language](https://img.shields.io/badge/Language-1f2937?style=for-the-badge)](#) | [![Russian](https://img.shields.io/badge/Russian-4f46e5?style=for-the-badge)](README.md) | [![English](https://img.shields.io/badge/English-6b7280?style=for-the-badge)](README_EN.md)
 
 # ⚡ Chromium AI Browser Bridge
 
@@ -26,6 +25,9 @@
 ---
 
 ## 🚀 Быстрый старт (за 2 минуты)
+
+> 💡 **Автонастройка через AI:**  
+> Если вы настраиваете проект через AI-ассистента (Antigravity, Cursor, Claude), просто скопируйте текст из файла **[`PROMPT.md`](PROMPT.md)** и отправьте ассистенту в чат — он сам пропишет пути и всё настроит!
 
 ### Шаг 1. Установка расширения в браузер
 
@@ -103,7 +105,7 @@ chmod +x start.sh
 | :--- | :--- |
 | `browser_get_active_tab` | Возвращает заголовок, URL и ID активной вкладки |
 | `browser_read_page` | Читает страницу: текст без разметки + список интерактивных кнопок/полей с селекторами |
-| `browser_click` | Кликает по элементу по CSS-селектору или по тексту кнопки (например, `"Войти"`) |
+| `browser_click` | Кликает по элементу по номеру `[1]`, CSS-селектору или тексту кнопки |
 | `browser_type` | Вводит текст в поле ввода, поддерживает очистку поля и отправку по Enter |
 | `browser_open_tab` | Открывает новый URL в новой вкладке |
 | `browser_list_tabs` | Возвращает список всех открытых вкладок браузера |
@@ -129,6 +131,7 @@ chromium-ai-bridge/
 │   └── icons/                  # Иконки (16x16, 48x48, 128x128)
 ├── server/                     # Локальный сервер
 │   ├── bridge_server.py        # Сервер WebSocket + MCP (JSON-RPC)
+│   ├── client.py               # Быстрый CLI клиент для скриптов
 │   └── requirements.txt        # Зависимости (websockets, mcp)
 ├── skills/                     # Навык для AI-агента
 │   └── browser-bridge/

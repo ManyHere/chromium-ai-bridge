@@ -1,7 +1,6 @@
 <div align="center">
 
-[![Русский](https://img.shields.io/badge/Язык-Русский-gray?style=for-the-badge)](README.md)
-[![English](https://img.shields.io/badge/Language-English-4f46e5?style=for-the-badge)](README_EN.md)
+[![Language](https://img.shields.io/badge/Language-1f2937?style=for-the-badge)](#) | [![Russian](https://img.shields.io/badge/Russian-6b7280?style=for-the-badge)](README.md) | [![English](https://img.shields.io/badge/English-4f46e5?style=for-the-badge)](README_EN.md)
 
 # ⚡ Chromium AI Browser Bridge
 
@@ -27,6 +26,9 @@ Allows your AI assistant to operate directly within your **real everyday browser
 ---
 
 ## 🚀 Quick Start (2 Minutes)
+
+> 💡 **One-Click AI Setup:**  
+> If you are using an AI assistant (Antigravity, Cursor, Claude), simply copy the ready prompt from **[`PROMPT.md`](PROMPT.md)** and paste it into chat — your assistant will configure everything automatically!
 
 ### Step 1. Install Extension in Your Browser
 
