@@ -72,6 +72,11 @@ if __name__ == "__main__":
                 prms = {"selector": raw_args}
         elif act in ("click", "scroll"):
             prms = {"selector": raw_args}
+        elif act in ("close_tab", "switch_tab"):
+            if raw_args.isdigit():
+                prms = {"tab_id": int(raw_args)}
+            else:
+                prms = {"tab_id": raw_args}
         elif act in ("open_tab", "navigate"):
             prms = {"url": raw_args}
         elif act == "eval_js":
