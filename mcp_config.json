@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "chromium-browser": {
+      "command": "python",
+      "args": [
+        "ABSOLUTE_PATH_TO/server/bridge_server.py",
+        "--mcp"
+      ]
+    }
+  }
+}

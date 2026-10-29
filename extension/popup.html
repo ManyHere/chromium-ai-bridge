@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Bridge</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo-title">
+        <div class="logo">⚡</div>
+        <h2>AI Browser Bridge</h2>
+      </div>
+      <span class="version">v1.0</span>
+    </div>
+
+    <div class="status-box" id="statusBox">
+      <span class="status-dot" id="statusDot"></span>
+      <span class="status-text" id="statusText">Проверка связи...</span>
+    </div>
+
+    <div class="field-group">
+      <label for="serverUrl">Адрес локального моста:</label>
+      <div class="input-row">
+        <input type="text" id="serverUrl" placeholder="ws://127.0.0.1:8785" />
+        <button id="saveBtn" class="btn secondary">ОК</button>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="reconnectBtn" class="btn primary">Переподключить</button>
+    </div>
+
+    <div class="hint-box">
+      <div class="hint-title">💡 Как использовать:</div>
+      <p>1. Запустите <code>start.bat</code> в папке проекта.</p>
+      <p>2. Напишите агенту: <i>"Посмотри в браузере..."</i> или используйте <code>/browser</code>.</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
