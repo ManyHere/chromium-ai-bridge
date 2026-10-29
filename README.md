@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Language](https://img.shields.io/badge/Language-1f2937?style=for-the-badge)](#) | [![Russian](https://img.shields.io/badge/Russian-4f46e5?style=for-the-badge)](README.md) | [![English](https://img.shields.io/badge/English-6b7280?style=for-the-badge)](README_EN.md)
+[![Language](https://img.shields.io/badge/Language-1f2937?style=for-the-badge)](#)  [![Russian](https://img.shields.io/badge/Russian-4f46e5?style=for-the-badge)](README.md)  [![English](https://img.shields.io/badge/English-6b7280?style=for-the-badge)](README_EN.md)
 
 # ⚡ Chromium AI Browser Bridge
 
