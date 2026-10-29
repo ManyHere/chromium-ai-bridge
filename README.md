@@ -1,6 +1,13 @@
+<div align="center">
+
+[![Русский](https://img.shields.io/badge/Язык-Русский-4f46e5?style=for-the-badge)](README.md)
+[![English](https://img.shields.io/badge/Language-English-gray?style=for-the-badge)](README_EN.md)
+
 # ⚡ Chromium AI Browser Bridge
 
 > Мост между вашим браузером на движке Chromium (Chrome, Edge, Brave, Яндекс Браузер, Opera) и локальным AI-ассистентом (**Google Antigravity**, **Claude Desktop**, **Cursor** и др.) через открытый протокол **MCP (Model Context Protocol)**.
+
+</div>
 
 Позволяет вашему AI-ассистенту работать прямо в вашем **реальном рабочем браузере**: читать открытые страницы, нажимать на кнопки, заполнять формы, делать скриншоты и переключаться между вкладками — без необходимости повторной авторизации и использования безликих headless-браузеров.
 

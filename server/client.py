@@ -72,6 +72,8 @@ if __name__ == "__main__":
                 prms = {"selector": raw_args}
         elif act in ("click", "scroll"):
             prms = {"selector": raw_args}
+        elif act in ("open_tab", "navigate"):
+            prms = {"url": raw_args}
         elif act == "eval_js":
             prms = {"code": raw_args}
         elif act == "type":
