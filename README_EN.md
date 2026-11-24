@@ -4,6 +4,8 @@
 
 # ⚡ Chromium AI Browser Bridge
 
+[![ManyHere/chromium-ai-bridge MCP server](https://glama.ai/mcp/servers/ManyHere/chromium-ai-bridge/badges/score.svg)](https://glama.ai/mcp/servers/ManyHere/chromium-ai-bridge)
+
 > A seamless bridge between your daily Chromium-based browser (Chrome, Edge, Brave, Yandex, Opera) and your local AI coding assistant (**Google Antigravity**, **Claude Desktop**, **Cursor**, etc.) via the open **MCP (Model Context Protocol)** standard.
 
 </div>

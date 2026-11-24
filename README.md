@@ -4,6 +4,8 @@
 
 # ⚡ Chromium AI Browser Bridge
 
+[![ManyHere/chromium-ai-bridge MCP server](https://glama.ai/mcp/servers/ManyHere/chromium-ai-bridge/badges/score.svg)](https://glama.ai/mcp/servers/ManyHere/chromium-ai-bridge)
+
 > Мост между вашим браузером на движке Chromium (Chrome, Edge, Brave, Яндекс Браузер, Opera) и локальным AI-ассистентом (**Google Antigravity**, **Claude Desktop**, **Cursor** и др.) через открытый протокол **MCP (Model Context Protocol)**.
 
 </div>
