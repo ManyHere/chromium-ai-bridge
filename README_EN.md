@@ -106,16 +106,19 @@ A ready-to-use **Skill** is included:
 
 | Tool | Description |
 | :--- | :--- |
-| `browser_get_active_tab` | Returns URL, title, and tab ID of the current active tab |
-| `browser_read_page` | Returns compact page summary and indexed element list `[1]`, `[2]`, `[3]` |
+| `browser_read_page` | Returns compact page summary and indexed element list `[1]`, `[2]` (prioritizing modals & Shadow DOM) |
 | `browser_click` | Clicks an element by numeric ID (`"1"`), button text, or CSS selector |
-| `browser_type` | Inputs text into a field by numeric ID or selector, supports auto-submit |
-| `browser_open_tab` | Opens a new URL in a new browser tab |
-| `browser_list_tabs` | Lists all open tabs across browser windows |
-| `browser_switch_tab` | Switches active focus to a tab by ID |
-| `browser_close_tab` | Closes active or specified tab |
+| `browser_type` | Inputs text into `<input>`, `<textarea>`, and `contenteditable` (React/Vue compatible, auto-submit) |
+| `browser_press_key` | Sends keyboard events (`Escape`, `Enter`, `Tab`, arrow keys, etc.) |
+| `browser_select_option` | Selects an option in `<select>` dropdowns by value or text |
+| `browser_open_tab` / `browser_navigate` | Opens a new tab or navigates an existing tab, waiting for load completion |
+| `browser_reload` / `browser_go_back` / `browser_go_forward` | Reloads tab or navigates browser history |
+| `browser_get_active_tab` / `browser_list_tabs` | Returns active tab info or lists all open tabs across windows |
+| `browser_switch_tab` / `browser_close_tab` | Switches focus to a tab by ID or closes a tab |
 | `browser_scroll` | Scrolls page (`down`, `up`, `top`, `bottom`) or to a specific element |
-| `browser_screenshot` | Captures visible screen area as a PNG DataURL |
+| `browser_download_file` | Downloads files using the browser's authenticated cookies directly to disk |
+| `browser_screenshot` | Fallback visual mode: captures visible viewport as PNG and passes image to the AI |
+| `browser_eval_js` | Executes JavaScript in the page's `MAIN` world context |
 
 ---
 

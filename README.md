@@ -74,7 +74,7 @@ chmod +x start.sh
     "chromium-browser": {
       "command": "python",
       "args": [
-        "C:\\Users\\asus\\.gemini\\antigravity\\scratch\\chromium-ai-bridge\\server\\bridge_server.py",
+        "ABSOLUTE_PATH_TO/server/bridge_server.py",
         "--mcp"
       ]
     }
@@ -105,17 +105,19 @@ chmod +x start.sh
 
 | Инструмент | Описание |
 | :--- | :--- |
-| `browser_get_active_tab` | Возвращает заголовок, URL и ID активной вкладки |
-| `browser_read_page` | Читает страницу: текст без разметки + список интерактивных кнопок/полей с селекторами |
-| `browser_click` | Кликает по элементу по номеру `[1]`, CSS-селектору или тексту кнопки |
-| `browser_type` | Вводит текст в поле ввода, поддерживает очистку поля и отправку по Enter |
-| `browser_open_tab` | Открывает новый URL в новой вкладке |
-| `browser_list_tabs` | Возвращает список всех открытых вкладок браузера |
-| `browser_switch_tab` | Переключает фокус на указанную вкладку |
-| `browser_close_tab` | Закрывает вкладку |
+| `browser_read_page` | Читает страницу: сжатый текст + список элементов `[1]`, `[2]` (с приоритетом модальных окон и Shadow DOM) |
+| `browser_click` | Кликает по элементу по номеру `[1]`, тексту кнопки или CSS-селектору |
+| `browser_type` | Вводит текст в `<input>`, `<textarea>` и `contenteditable` (с поддержкой React/Vue и Enter) |
+| `browser_press_key` | Нажимает клавиши клавиатуры (`Escape`, `Enter`, `Tab`, стрелки и др.) |
+| `browser_select_option` | Выбирает пункт в выпадающем списке `<select>` |
+| `browser_open_tab` / `browser_navigate` | Открывает новую вкладку или переходит по URL в текущей с автоожиданием загрузки |
+| `browser_reload` / `browser_go_back` / `browser_go_forward` | Перезагружает вкладку и управляет историей переходов |
+| `browser_get_active_tab` / `browser_list_tabs` | Возвращает активную вкладку или список всех вкладок |
+| `browser_switch_tab` / `browser_close_tab` | Переключает фокус на вкладку или закрывает её |
 | `browser_scroll` | Прокручивает страницу (`down`, `up`, `top`, `bottom`) или к указанному элементу |
-| `browser_screenshot` | Делает снимок видимой области экрана в формате PNG |
-| `browser_eval_js` | Выполняет произвольный JavaScript в контексте веб-страницы |
+| `browser_download_file` | Скачивает файл по URL через авторизованную сессию браузера прямо на диск |
+| `browser_screenshot` | Резервный визуальный режим: делает PNG-скриншот экрана и передаёт изображение ИИ |
+| `browser_eval_js` | Выполняет JavaScript в контексте страницы (`MAIN` world) |
 
 ---
 

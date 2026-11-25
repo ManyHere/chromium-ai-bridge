@@ -3,7 +3,7 @@ title Antigravity AI Browser Bridge
 cls
 
 echo =======================================================
-echo    AI Chromium Bridge
+echo    AI Chromium Bridge v1.1
 echo =======================================================
 echo.
 
@@ -16,10 +16,16 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-echo [1/2] Checking dependencies (websockets, mcp)...
-python -m pip install -q -r "%~dp0server\requirements.txt"
+echo [1/2] Checking dependencies...
+python -c "import websockets, mcp" >nul 2>nul
 if %ERRORLEVEL% neq 0 (
-    echo [WARNING] Could not update dependencies automatically. Trying to start anyway...
+    echo Installing required packages ^(websockets, mcp^)...
+    python -m pip install -q -r "%~dp0server\requirements.txt"
+    if %ERRORLEVEL% neq 0 (
+        echo [WARNING] Could not install dependencies automatically. Trying to start anyway...
+    )
+) else (
+    echo Dependencies OK.
 )
 
 echo [2/2] Starting server on ws://127.0.0.1:8785 ...
